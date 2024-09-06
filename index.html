@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="sec">
+    <div class="container">
+      <div class="form-box">
+        <div class="toggle-box">
+          <button id="login-btn" onclick="showLogin()">Login</button>
+          <button id="register-btn" onclick="showRegister()">Register</button>
+        </div>
+        <form id="login-form" class="input-group">
+          <h2>Login</h2>
+          <input type="text" class="input-field" placeholder="Username" id="lUsername" name="username2" required>
+          <input type="password" class="input-field" placeholder="Password" id="lPassword" name="password2" required>
+          <button type="button" class="submit-btn" onclick="login()">Login</button>
+        </form>
+        <form id="register-form" class="input-group">
+          <h2>REGISTER</h2>
+          <input type="text" class="input-field" placeholder="Username" id="username" name="username" required>
+          <input type="password" class="input-field" placeholder="Password" id="password" name="password" required>
+          <button type="button" class="submit-btn" onclick="register()">Register</button>
+        </form>
+      </div>
+    </div>
+    <section style="width: 30%;margin-left: 100px;">
+        <button type="button" class="submit-btn" onclick="getCities()">Cities</button>
+        <div id="div">
+        </div>
+    </section>
+
+</section>
+<p style="color: red;align-content: center;font-size: 1.5em;margin-top: 50px;text-align: center;" id="error"></p>
+
+<script src="index.js"></script>
+
+
+</body>
+</html>
